@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | UBN'S ACADEMY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">UBN's Academy</div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="msg.html">Messages</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Login/Signup</a>
+    </nav>
+    <button id="menuToggle">☰</button>
+  </header> 
+  <script class="  nav.js (toggle menu on mobile)">
+      
+      document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('show');
+    });
+  </script>
+
+
+  <section class="page-banner">
+    <h1>Our Web Development Courses</h1>
+    <p>Explore our range of beginner to advanced online courses and start learning today!</p>
+  </section>
+
+  <section class="courses-grid">
+    <div class="course-card">
+      <h2>HTML & CSS Basics</h2>
+      <p>Learn how to build your first web page from scratch using HTML and CSS.</p>
+      <a href="course-details.html">View Course</a>
+    </div>
+
+    <div class="course-card">
+      <h2>JavaScript Fundamentals</h2>
+      <p>Master JavaScript basics, variables, functions, and DOM manipulation.</p>
+      <a href="#">View Course</a>
+    </div>
+
+    <div class="course-card">
+      <h2>Responsive Web Design</h2>
+      <p>Create mobile-friendly and responsive websites using modern techniques.</p>
+      <a href="#">View Course</a>
+    </div>
+
+    <div class="course-card">
+      <h2>React for Beginners</h2>
+      <p>Build dynamic web applications with the React JavaScript library.</p>
+      <a href="#">View Course</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UBN's Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

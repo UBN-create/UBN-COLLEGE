@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBN'S ACADEMY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">UBN's Academy</div>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="menuToggle">☰</button>
+  </header> 
+  <script class="  nav.js (toggle menu on mobile)">
+      
+      document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('show');
+    });
+  </script>
+
+
+  <section class="hero">
+    <h1>Welcome to UBN's Academy</h1>
+    <p>Your future begins here. Explore your potential with us.</p>
+    <a href="login.html" class="cta-button">Apply Now</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Our Programs</h2>
+      <p>Discover a wide range of e-learning courses under web development.</p>
+    </div>
+    <div class="feature">
+      <h2>Social Life</h2>
+      <p>Experience vibrant student activities, competitions, and events.</p>
+    </div>
+    <div class="feature">
+      <h2>News & Events</h2>
+      <p>Stay updated with the latest happenings and announcements.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UBN's Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

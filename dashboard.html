@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Dashboard | Prestige Web School</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="logo">UBN's Academy</div>
+    <nav>
+      <a href="courses.html">Courses</a>
+      <a href="profile.html">Profile</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+  <script class="  nav.js (toggle menu on mobile)">
+      
+    document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('mainNav').classList.toggle('show');
+  });
+</script>
+  <section class="welcome">
+    <h1>Welcome back, John!</h1>
+    <p>Here’s your current progress — keep learning and building your skills!</p>
+  </section>
+
+  <section class="courses">
+    <h2>Your Courses</h2>
+
+    <div class="course-card">
+      <h3>HTML & CSS Basics</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;">60%</div>
+      </div>
+      <a href="course-details.html" class="continue-btn">Continue Learning</a>
+    </div>
+
+    <div class="course-card">
+      <h3>JavaScript Essentials</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 30%;">30%</div>
+      </div>
+      <a href="#" class="continue-btn">Continue Learning</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UBN's Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

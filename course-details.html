@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML & CSS Basics | UBN'S ACADEMY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">UBN's Academy</div>
+    <nav id="mainNav">
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="msg.html">Messages</a>
+      <a href="blog.html">Blogs</a>
+      <a href="login.html">Login/Signup</a>
+    </nav>
+    <button id="menuToggle">☰</button>
+  </header> 
+  <script class="  nav.js (toggle menu on mobile)">
+      
+      document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('show');
+    });
+  </script>
+
+
+  <section class="banner">
+    <h1>HTML & CSS Basics</h1>
+    <p>Start your web development journey by mastering HTML and CSS.</p>
+  </section>
+
+  <section class="course-info">
+    <h2>Course Description</h2>
+    <p>This beginner-friendly course introduces you to the fundamentals of HTML and CSS, the building blocks of every website. By the end of this course, you'll be able to create and style web pages confidently.</p>
+
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>Introduction to HTML elements and structure</li>
+      <li>Styling web pages with CSS</li>
+      <li>Creating responsive layouts</li>
+      <li>Best practices for clean, accessible web design</li>
+    </ul>
+
+    <h2>Requirements</h2>
+    <ul>
+      <li>No prior coding experience needed</li>
+      <li>Basic computer skills</li>
+      <li>Internet connection and web browser</li>
+    </ul>
+
+    <a href="#" class="enroll-btn">Enroll Now</a>
+  </section>
+
+  <section class="course-video">
+    <h2>Watch Intro Lesson</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" 
+        title="HTML & CSS Basics" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="course-progress">
+    <h2>Your Progress</h2>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;">40%</div>
+    </div>
+  </section>
+  <script>
+    // Animate progress fill smoothly
+    window.onload = function() {
+      const progress = document.querySelector('.progress');
+      progress.style.width = '40%';
+    };
+  </script>
+
+  <footer>
+    <p>&copy; 2025 UBN's Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
